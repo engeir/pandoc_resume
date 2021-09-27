@@ -1,100 +1,134 @@
-Johnny Coder
-============
+Eirik Rolland Enger
+===================
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+> **PhD candidate**
+>
+> PhD candidate at the complex systems modelling group at the Department of Physics and
+> Technology, University of Tromsø. Fond of abstract ideas, free open-source software and
+> skiing.
 
 ----
 
 Education
 ---------
 
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
+2020--2024 (expected)
+:   *PhD, Climate Physics at the University of Tromsø* (Tromsø, Norway)
 
     *Thesis title: Deep Learning Approaches to the Self-Awesomeness
      Estimation Problem*
 
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
+2015--2020
+:   *MS in Space Physics at the University of Tromsø* (Tromsø, Norway)
 
-    *Minor: Awesomeology*
+    *Thesis title: A model for IS spectra for magnetized plasma with arbitrary isotropic
+    velocity distributions.* Link: [https://hdl.handle.net/10037/19542]
 
 Experience
 ----------
 
-**Your Most Recent Work Experience:**
+<!-- ----------                                              ---------- -->
+<!-- **University of Tromsø:**                               2018-- -->
+<!-- *Teaching Assistant*                                    Tromsø -->
+<!-- ----------                                              ---------- -->
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+2018--Now
+:   *Teacing Assistant at University of Tromsø* (Tromsø, Norway).
 
-* First item
+    * FYS-2000 Quantum Mechanics (S18)
+    * FYS-0100 Basic Physics (F18,F19)
+    * FYS-2009 Sun, planets and space (F20,F21)
+    * FYS-3002 Techniques for investigating the near-earth space environment (S21)
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
 
-**That Other Job You Had**
+<!-- ----------                                              ---------- -->
+<!-- **FFI --- Norwegian Defence Research Establishment:**   June 2019--July 2019 -->
+<!-- *Summer student*                                        Kjeller -->
+<!-- ----------                                              ---------- -->
 
-Also with a short description.
+2019 (2 months)
+:   *Summer student at FFI --- Norwegian Defence Research Establishment* (Kjeller, Norway).
+
+    During eight weeks in the summer of 2019 I worked at the FFI, continuing the project on
+    software defined radios from 2018. The goal this summer was to be able to do real time
+    spoofing of a GNSS (Global Navigation Satellite System) receiver, meaning it should be
+    possible for the spoofer to make adjustments to the path the fake signal gives, in real
+    time. Multiple open-source projects was used, some of which I modified or wrote myself
+    during the project. The added code was written in Python, and the complete project can by
+    found in my [bladeGPS-Game repository]. The project ended in a successful demonstration of
+    real-time controlling of a spoofing signal.
+
+<!-- ----------                                              ---------- -->
+<!-- **FFI --- Norwegian Defence Research Establishment:**   June 2018--August 2018 -->
+<!-- *Summer student*                                        Kjeller -->
+<!-- ----------                                              ---------- -->
+
+2018 (3 months)
+:   *Summer student at FFI --- Norwegian Defence Research Establishment* (Kjeller, Norway).
+
+    During nine weeks in the summer of 2018 I worked at the FFI on a project about software
+    defined radios for use with jamming and spoofing of GNSS receivers. Open-source projects
+    was used along with a number of different hardware, most notably the [USRP]. At the end of
+    the period, spoofing of both GNSS receivers and a phone was demonstrated, and a report
+    documenting the project was written.
 
 Technical Experience
 --------------------
 
-My Cool Side Project
-:   For items which don't have a clear time ordering, a definition
-    list can be used to have named items.
-
-    * These items can also contain lists, but you need to mind the
-      indentation levels in the markdown source.
-    * Second item.
+Website
+:   I have a website called [flottflyt.com] where I put up projects I work in my spare
+    time, as well as any other content I find interesting. For example I have my own NFT
+    storefront on the website that uses the [metaplex] protocol on the [Solana]
+    blockchain.
 
 Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+:   I maintain the project **[ncdump-rich]** which is published on [PyPI]. This is
+    a previewer for quickly showing formatted metadata in `.nc` files, written in python.
+    I also contributed to **[stpv]** which is a general previewing tool to be used within
+    the terminal.
 
 Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+:   **python:**
+    Have been programming in python for four years with increasing intensity, creating
+    multiple projects over the years. See my [github] for a closer look at the different
+    repositories.
 
-:   **second-lang:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file). 
+<!-- :   **shell:** -->
+<!--     Since switching to linux and more minimalistic window managers than the standard GNOME -->
+<!--     window manager on Ubuntu, specifically the [bspwm], I have been working more and more -->
+<!--     in shell scripts to customise my set up. -->
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
-
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
-
+[![](../images/github-logo2.png) engeir]: https://github.com/engeir
+[github]: https://github.com/engeir
+[PyPI]: https://pypi.org/
+[Solana]: https://solana.com/
+[USRP]: https://www.ettus.com/all-products/ub210-kit/
+[bladeGPS-Game repository]: https://github.com/engeir/bladeGPS-Game
+[bspwm]: https://github.com/baskerville/bspwm
+[eirik.r.enger@uit.no]: mailto:eirik.r.enger@uit.no
+[eirikenger.xyz]: https://eirikenger.xyz
+[flottflyt.com]: https://flottflyt.com
+[https://hdl.handle.net/10037/19542]: https://hdl.handle.net/10037/19542
+[metaplex]: https://www.metaplex.com/
+[ncdump-rich]: https://ncdump-rich.readthedocs.io/
 [ref]: https://github.com/githubuser/superlongprojectname
+[stpv]: https://github.com/Naheel-Azawy/stpv
+[twitter]: https://twitter.com/EngerEirik
+[linkedin]: https://www.linkedin.com/in/eirik-rolland-enger/
 
-Extra Section, Call it Whatever You Want
-----------------------------------------
+[pdf version]: ../output/resume.pdf
+[rtf version]: ../output/resume.rtf
+[html version]: ../output/resume.html
+[doc version]: ../output/resume.docx
 
-* Human Languages:
-
-     * English (native speaker)
-     * ???
-     * This is what a nested list looks like.
-
-* Random tidbit
-
-* Other sort of impressive-sounding thing you did
+<!-- > [eirikenger.xyz] • [![](../images/github-logo2.png) engeir]\ -->
 
 ----
 
-> <email@example.com> • +00 (0)00 000 0000 • XX years old\
-> address - Mytown, Mycountry
+> <eirik.r.enger@uit.no> • +47 477 19 556 • 25 years old\
+> [eirikenger.xyz] • [github] • [linkedin] • [twitter]\
+> Grenseveien 6, 9011 Tromsø, Norway\
+> \
+> [pdf version] • [doc version] • [rtf version] • [html version]
