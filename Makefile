@@ -24,7 +24,7 @@ html: init
 			--lua-filter=pdc-links-target-blank.lua \
 			--from markdown --to html \
 			--output $(OUT_DIR)/$$FILE_NAME.html $$f \
-			--metadata pagetitle=$$FILE_NAME;\
+			--metadata pagetitle="Eirik Rolland Enger";\
 	done
 
 docx: init
