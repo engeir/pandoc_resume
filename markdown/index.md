@@ -120,7 +120,7 @@ Programming Languages
 
 [pdf version]: http://resume.eirikenger.xyz/index.pdf
 [rtf version]: http://resume.eirikenger.xyz/index.rft
-[html version]: http://resume.eirikenger.xyz/index.html
+[html version]: http://resume.eirikenger.xyz
 [doc version]: http://resume.eirikenger.xyz/index.docx
 
 <!-- > [eirikenger.xyz] • [![](../images/github-logo2.png) engeir]\ -->
