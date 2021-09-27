@@ -118,10 +118,10 @@ Programming Languages
 [twitter]: https://twitter.com/EngerEirik
 [linkedin]: https://www.linkedin.com/in/eirik-rolland-enger/
 
-[pdf version]: ../docs/resume.pdf
-[rtf version]: ../docs/resume.rtf
-[html version]: ../docs/resume.html
-[doc version]: ../docs/resume.docx
+[pdf version]: http://resume.eirikenger.xyz/resume.pdf
+[rtf version]: http://resume.eirikenger.xyz/resume.rft
+[html version]: http://resume.eirikenger.xyz/resume.html
+[doc version]: http://resume.eirikenger.xyz/resume.docx
 
 <!-- > [eirikenger.xyz] • [![](../images/github-logo2.png) engeir]\ -->
 
