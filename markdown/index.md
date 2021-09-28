@@ -17,8 +17,7 @@ Education
 2020--2024 (expected)
 :   *PhD, Climate Physics at the University of Tromsø* (Tromsø, Norway)
 
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
+    *Thesis title: Global temperature response to volcanic activity*
 
 2015--2020
 :   *MS in Space Physics at the University of Tromsø* (Tromsø, Norway)
