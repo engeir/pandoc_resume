@@ -17,13 +17,20 @@ Education
 2020--2024 (expected)
 :   *PhD, Climate Physics at the University of Tromsø* (Tromsø, Norway)
 
-    *Thesis title: Global temperature response to volcanic activity*
+    Thesis title: Global temperature response to volcanic activity
 
 2015--2020
 :   *MS in Space Physics at the University of Tromsø* (Tromsø, Norway)
 
-    *Thesis title: A model for IS spectra for magnetized plasma with arbitrary isotropic
-    velocity distributions.* Link: [https://hdl.handle.net/10037/19542]
+    Thesis title: A model for IS spectra for magnetized plasma with arbitrary isotropic
+    velocity distributions. Link: [https://hdl.handle.net/10037/19542]
+
+    During the Master Thesis work I developed a [python program] that solves an incoherent
+    scatter radar equation. The equation is solved for any oblique angles between the
+    radar pointing direction and the magnetic field line, and it accepts any isotropic
+    electron velocity distribution. This made it possible to calculate the spectrum of
+    superthermal electrons observed by a moving radar numerically and compare to real
+    observations, which was a new contribution to the field.
 
 Experience
 ----------
@@ -50,14 +57,14 @@ Experience
 2019 (2 months)
 :   *Summer student at FFI --- Norwegian Defence Research Establishment* (Kjeller, Norway).
 
-    During eight weeks in the summer of 2019 I worked at the FFI, continuing the project on
-    software defined radios from 2018. The goal this summer was to be able to do real time
-    spoofing of a GNSS (Global Navigation Satellite System) receiver, meaning it should be
-    possible for the spoofer to make adjustments to the path the fake signal gives, in real
-    time. Multiple open-source projects was used, some of which I modified or wrote myself
-    during the project. The added code was written in Python, and the complete project can by
-    found in my [bladeGPS-Game repository]. The project ended in a successful demonstration of
-    real-time controlling of a spoofing signal.
+    During eight weeks in the summer of 2019 I worked at the FFI, continuing the project
+    on software defined radios from 2018. The goal this summer was to be able to do real
+    time spoofing of a GNSS (Global Navigation Satellite System) receiver, meaning it
+    should be possible for the spoofer to make adjustments to the path the fake signal
+    gives, in real time. Multiple open-source projects was used, some of which I modified
+    or wrote myself during the project. The added code was written in Python, and the
+    complete project can by found in my [bladeGPS-Game repository]. The project ended in
+    a successful demonstration of real-time control of a spoofing signal.
 
 <!-- ----------                                              ---------- -->
 <!-- **FFI --- Norwegian Defence Research Establishment:**   June 2018--August 2018 -->
@@ -67,26 +74,25 @@ Experience
 2018 (3 months)
 :   *Summer student at FFI --- Norwegian Defence Research Establishment* (Kjeller, Norway).
 
-    During nine weeks in the summer of 2018 I worked at the FFI on a project about software
-    defined radios for use with jamming and spoofing of GNSS receivers. Open-source projects
-    was used along with a number of different hardware, most notably the [USRP]. At the end of
-    the period, spoofing of both GNSS receivers and a phone was demonstrated, and a report
-    documenting the project was written.
+    During nine weeks in the summer of 2018 I worked at the FFI on a project about
+    software defined radios for use with jamming and spoofing of GNSS receivers.
+    Open-source projects was used along with a number of different hardware, most notably
+    the [USRP]. At the end of the period, spoofing of both GNSS receivers and a mobile
+    phone was demonstrated, and a report documenting the process was written.
 
 Technical Experience
 --------------------
 
 Website
-:   I have a website called [flottflyt.com] where I put up projects I work in my spare
-    time, as well as any other content I find interesting. For example I have my own NFT
-    storefront on the website that uses the [metaplex] protocol on the [Solana]
-    blockchain.
+:   I have a website called [flottflyt.com] where I put up projects I work on in my spare
+    time, as well as any other content I find interesting. There, you can find my own NFT
+    storefront that uses the [metaplex] protocol on the [Solana] blockchain.
 
 Open Source
-:   I maintain the project **[ncdump-rich]** which is published on [PyPI]. This is
+:   Maintainer of the project **[ncdump-rich]** which is published on [PyPI]. This is
     a previewer for quickly showing formatted metadata in `.nc` files, written in python.
-    I also contributed to **[stpv]** which is a general previewing tool to be used within
-    the terminal.
+    Also made contributions to **[stpv]** which is a general previewing tool to be used
+    within the terminal, for example with a file manager like [lf] or [nnn].
 
 Programming Languages
 :   **python:**
@@ -100,7 +106,6 @@ Programming Languages
 <!--     in shell scripts to customise my set up. -->
 
 [![](../images/github-logo2.png) engeir]: https://github.com/engeir
-[github]: https://github.com/engeir
 [PyPI]: https://pypi.org/
 [Solana]: https://solana.com/
 [USRP]: https://www.ettus.com/all-products/ub210-kit/
@@ -109,13 +114,17 @@ Programming Languages
 [eirik.r.enger@uit.no]: mailto:eirik.r.enger@uit.no
 [eirikenger.xyz]: https://eirikenger.xyz
 [flottflyt.com]: https://flottflyt.com
+[github]: https://github.com/engeir
 [https://hdl.handle.net/10037/19542]: https://hdl.handle.net/10037/19542
+[lf]: https://godoc.org/github.com/gokcehan/lf
+[linkedin]: https://www.linkedin.com/in/eirik-rolland-enger/
 [metaplex]: https://www.metaplex.com/
 [ncdump-rich]: https://ncdump-rich.readthedocs.io/
+[nnn]:https://github.com/jarun/nnn
+[python program]: https://engeir.github.io/isr-spectrum/
 [ref]: https://github.com/githubuser/superlongprojectname
 [stpv]: https://github.com/Naheel-Azawy/stpv
 [twitter]: https://twitter.com/EngerEirik
-[linkedin]: https://www.linkedin.com/in/eirik-rolland-enger/
 
 [pdf version]: https://resume.eirikenger.xyz/index.pdf
 [rtf version]: https://resume.eirikenger.xyz/index.rtf
