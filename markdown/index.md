@@ -17,7 +17,14 @@ Education
 2020--2024 (expected)
 :   *PhD, Climate Physics at the University of Tromsø* (Tromsø, Norway)
 
-    Thesis title: Global temperature response to volcanic activity
+    Thesis title: Global temperature response to volcanic activity.
+
+    The PhD work consist of running long climate model simulations with volcanic forcing
+    and investigate the corresponding temperature response to volcanoes. The response to
+    volcanic forcing is hypothesized to be linear. Further, analysis will be carried out
+    to investigate the universality of the response to volcanic forcing with respect to
+    any kind of forcing, possibly providing valuble insight into the equilibrium climate
+    sensitivity.
 
 2015--2020
 :   *MS in Space Physics at the University of Tromsø* (Tromsø, Norway)
@@ -29,7 +36,7 @@ Education
     scatter radar equation. The equation is solved for any oblique angles between the
     radar pointing direction and the magnetic field line, and it accepts any isotropic
     electron velocity distribution. This made it possible to calculate the spectrum of
-    superthermal electrons observed by a moving radar numerically and compare to real
+    suprathermal electrons observed by a moving radar numerically and compare to real
     observations, which was a new contribution to the field.
 
 Experience
@@ -92,7 +99,7 @@ Open Source
 :   Maintainer of the project **[ncdump-rich]** which is published on [PyPI]. This is
     a previewer for quickly showing formatted metadata in `.nc` files, written in python.
     Also made contributions to **[stpv]** which is a general previewing tool to be used
-    within the terminal, for example with a file manager like [lf] or [nnn].
+    within the terminal, for example with the file manager [lf].
 
 Programming Languages
 :   **python:**
