@@ -142,7 +142,7 @@ Programming Languages
 
 ----
 
-> <eirik.r.enger@uit.no> • +47 477 19 556 • 25 years old\
+> <eirik.r.enger@uit.no> • +47 477 19 556 • myage years old\
 > [eirikenger.xyz] • [github] • [linkedin] • [twitter]\
 > Grenseveien 6, 9011 Tromsø, Norway\
 > Last update: thedate \
