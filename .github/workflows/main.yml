@@ -30,7 +30,9 @@ jobs:
         uses: actions/upload-artifact@v2.2.3
         with:
           # Artifact name
-          name: Resume PDF # optional, default is artifact
+          name: Resume # optional, default is artifact
+          branch: gh-pages
+          force: true
+          directory: ./docs/
           # A file, directory or wildcard pattern that describes what to upload
-          path: output/*.pdf
-
+          # path: output/*.pdf
