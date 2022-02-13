@@ -21,7 +21,7 @@ html: init
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
 		echo $$FILE_NAME.html; \
 		pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
-			--lua-filter=pdc-links-target-blank.lua --lua-filter=place-date.lua \
+			--lua-filter=place-date.lua --lua-filter=pdc-links-target-blank.lua \
 			--from markdown --to html \
 			--output $(OUT_DIR)/$$FILE_NAME.html $$f \
 			--metadata pagetitle="Eirik Rolland Enger";\
