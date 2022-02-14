@@ -8,7 +8,7 @@ all: html pdf docx rtf
 pdf: init
 	for f in $(IN_DIR)/*.md; do \
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.pdf; \
+		echo $$FILE_NAME.md; \
 		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
 			--from markdown --to context \
 			--variable papersize=A4 --lua-filter=place-date.lua \
