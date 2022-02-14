@@ -13,7 +13,7 @@ jobs:
       run: sudo apt install pandoc context
 
     - name: Build resume
-      uses: ./actions
+      run: make
 
     - name: Init new repo in dist folder and commit generated files
       run: |
