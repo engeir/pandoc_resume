@@ -96,10 +96,13 @@ Website
     storefront that uses the [metaplex] protocol on the [Solana] blockchain.
 
 Open Source
-:   Maintainer of the project **[ncdump-rich]** which is published on [PyPI]. This is
-    a previewer for quickly showing formatted metadata in `.nc` files, written in python.
-    Also made contributions to **[stpv]** which is a general previewing tool to be used
-    within the terminal, for example with the file manager [lf].
+:   Maintainer of the projects **[northern-lights-forecast]** and **[ncdump-rich]** which
+    are both published on [PyPI]. northern-lights-forecast is a program that listens to
+    a website for updates on northern lights weather, and sends a message to a Telegram
+    bot if conditions for seeing northern lights are good. ncdump-rich is a previewer for
+    quickly showing formatted metadata in `.nc` files, written in python. Also made
+    contributions to **[stpv]** which is a general previewing tool to be used within the
+    terminal, for example with the file manager [lf].
 
 Programming Languages
 :   **python:**
@@ -127,6 +130,7 @@ Programming Languages
 [linkedin]: https://www.linkedin.com/in/eirik-rolland-enger/
 [metaplex]: https://www.metaplex.com/
 [ncdump-rich]: https://ncdump-rich.readthedocs.io/
+[northern-lights-forecast]: https://github.com/engeir/northern-lights-forecast
 [nnn]:https://github.com/jarun/nnn
 [python program]: https://engeir.github.io/isr-spectrum/
 [ref]: https://github.com/githubuser/superlongprojectname
