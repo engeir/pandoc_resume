@@ -13,8 +13,8 @@ pdf: init
 			--from markdown --to context \
 			--variable papersize=A4 --lua-filter=place-date.lua \
 			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
-		mtxrun --generate; \
-		mtxrun --path=$(OUT_DIR) --result=$$FILE_NAME.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
+		# export PATH="$PATH:/usr/bin"
+		/usr/bin/mtxrun --path=$(OUT_DIR) --result=$$FILE_NAME.pdf --script context $$FILE_NAME.tex > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
 	done
 
 html: init
