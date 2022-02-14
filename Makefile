@@ -6,9 +6,10 @@ STYLE=chmduquesne
 all: html pdf docx rtf
 
 pdf: init
+	ls
 	for f in $(IN_DIR)/*.md; do \
 		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.md; \
+		echo $$FILE_NAME.pdf; \
 		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
 			--from markdown --to context \
 			--variable papersize=A4 --lua-filter=place-date.lua \

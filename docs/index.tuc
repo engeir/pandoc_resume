@@ -135,6 +135,9 @@ utilitydata.structures.counters.collected={
  ["intermezzo"]={
   { 0 },
  },
+ ["itemgroup:enumerate"]={
+  { 0 },
+ },
  ["itemgroup:itemize"]={
   { 0, 4 },
  },
