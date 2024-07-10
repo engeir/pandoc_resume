@@ -55,7 +55,7 @@ sudo dnf install pandoc texlive-collection-context
 
 #### Arch
 ```bash
-sudo pacman -S pandoc texlive-core
+sudo pacman -S pandoc texlive
 ```
 
 #### OSX
@@ -69,6 +69,16 @@ Make sure to add the directory `/Library/TeX/texbin/` to your path or `context` 
 ```
 export PATH=$PATH:/Library/TeX/texbin/
 ```
+
+#### Nix
+
+Make sure to enable flakes, see [this](https://nixos.wiki/wiki/Flakes).
+
+```bash
+nix build
+```
+
+The built resume will end up in `./result`.
 
 ### Troubleshooting
 
