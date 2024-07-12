@@ -6,8 +6,8 @@ STYLE=chmduquesne
 all: html pdf docx rtf
 
 pdf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
+	for f in $(IN_DIR)/*.rst; do \
+		FILE_NAME=`basename $$f | sed 's/.rst//g'`; \
 		echo $$FILE_NAME.pdf; \
 		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
 			--from markdown --to context \
@@ -17,8 +17,8 @@ pdf: init
 	done
 
 html: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
+	for f in $(IN_DIR)/*.rst; do \
+		FILE_NAME=`basename $$f | sed 's/.rst//g'`; \
 		echo $$FILE_NAME.html; \
 		pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
 			--lua-filter=place-date.lua --lua-filter=pdc-links-target-blank.lua \
@@ -28,15 +28,15 @@ html: init
 	done
 
 docx: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
+	for f in $(IN_DIR)/*.rst; do \
+		FILE_NAME=`basename $$f | sed 's/.rst//g'`; \
 		echo $$FILE_NAME.docx; \
 		pandoc --standalone $$SMART $$f --lua-filter=place-date.lua --output $(OUT_DIR)/$$FILE_NAME.docx; \
 	done
 
 rtf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
+	for f in $(IN_DIR)/*.rst; do \
+		FILE_NAME=`basename $$f | sed 's/.rst//g'`; \
 		echo $$FILE_NAME.rtf; \
 		pandoc --standalone $$SMART $$f --lua-filter=place-date.lua --output $(OUT_DIR)/$$FILE_NAME.rtf; \
 	done

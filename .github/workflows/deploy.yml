@@ -1,33 +1,29 @@
 name: Deploy to GitHub pages
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    
-    - name: Install pandoc and context
-      run: sudo apt install pandoc context
-
-    - name: Build resume
-      run: make
-
-    - name: Init new repo in dist folder and commit generated files
-      run: |
-        cd docs/
-        git init
-        git add -A
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m 'deploy'
-
-    - name: Force push to destination branch
-      uses: ad-m/github-push-action@v0.5.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        force: true
-        directory: ./docs/
+      - uses: actions/checkout@v4
+      - name: Install pandoc and context
+        run: sudo apt install pandoc context
+      - name: Build resume
+        run: make
+      - name: Init new repo in dist folder and commit generated files
+        run: |
+          cd docs/
+          git init
+          git add -A
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'deploy'
+          git config --global --add safe.directory /github/workspace/docs
+      - name: Force push to destination branch
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          force: true
+          directory: ./docs/

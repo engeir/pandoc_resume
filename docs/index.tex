@@ -33,9 +33,9 @@
 
 \setupblackrules[width=31mm, color=rulecolor]
 
-\setuphead[chapter]      [style=\tfd]
-\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
-\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+\setuphead[subsection] [style=\tfd]
+\setuphead[chapter]    [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[section]    [style=\tfb\bf, color=sectioncolor, align=right,
                           before={\leavevmode\blackrule\hspace}]
 \setuphead[subsubsection][style=\bf]
 
@@ -71,7 +71,8 @@
 
 \starttext
 
-\section[title={Eirik Rolland Enger},reference={eirik-rolland-enger}]
+\startsectionlevel[title={Eirik Rolland
+Enger},reference={eirik-rolland-enger}]
 
 \thinrule
 
@@ -85,7 +86,7 @@ free open-source software and skiing.
 
 \thinrule
 
-\subsection[title={Education},reference={education}]
+\startsectionlevel[title={Education},reference={education}]
 
 \startdescription{2020--2024 (expected)}
   {\em PhD, Climate Physics at the University of Tromsø} (Tromsø,
@@ -93,13 +94,13 @@ free open-source software and skiing.
 
   Thesis title: Global temperature response to volcanic activity.
 
-  The PhD work consist of running long climate model simulations with
-  volcanic forcing and investigate the corresponding temperature
-  response to volcanoes. The response to volcanic forcing is
-  hypothesized to be linear. Further, analysis will be carried out to
-  investigate the universality of the response to volcanic forcing with
-  respect to any kind of forcing, possibly providing valuble insight
-  into the equilibrium climate sensitivity.
+  The PhD work consist of simulating volcanic climate forcing and
+  investigate the corresponding temperature response to volcanoes. The
+  response to volcanic forcing is hypothesized to be linear. Further,
+  analysis is carried out to investigate the universality of the
+  response to volcanic forcing with respect to different climate
+  forcings, possibly providing valuable insight into the equilibrium
+  climate sensitivity.
 \stopdescription
 
 \startdescription{2015--2020}
@@ -109,20 +110,35 @@ free open-source software and skiing.
   arbitrary isotropic velocity distributions. Link:
   \useURL[url1][https://hdl.handle.net/10037/19542]\from[url1]
 
-  During the Master Thesis work I developed a
-  \useURL[url2][https://engeir.github.io/isr-spectrum/][][python
-  program]\from[url2] that solves an incoherent scatter radar equation.
-  The equation is solved for any oblique angles between the radar
-  pointing direction and the magnetic field line, and it accepts any
-  isotropic electron velocity distribution. This made it possible to
-  calculate the spectrum of suprathermal electrons observed by a moving
-  radar numerically and compare to real observations, which was a new
-  contribution to the field.
+  During the Master Thesis work I developed a \goto{python
+  program}[url(https://inscar.readthedocs.io/en/latest/)] that solves an
+  incoherent scatter radar equation. The equation is solved for any
+  oblique angles between the radar pointing direction and the magnetic
+  field line, and it accepts any isotropic electron velocity
+  distribution. This made it possible to calculate numerically the
+  spectrum of super-thermal electrons observed by a moving radar and
+  compare this to real observations, which was a new contribution to the
+  field.
 \stopdescription
 
-\subsection[title={Experience},reference={experience}]
+\stopsectionlevel
 
-\startdescription{2018--Now}
+\startsectionlevel[title={Experience},reference={experience}]
+
+\startdescription{2024}
+  {\em Course leader at University of Tromsø} (Tromsø, Norway).
+
+  \startitemize[packed]
+  \item
+    FYS-2019 Sun, planets and space (F24)
+  \stopitemize
+
+  Led both the lectures and the exercise classes of FYS-2019 during the
+  fall of 2024, giving me valuable practice in preparing course
+  material, lecturing and preparation of a 4h written exam.
+\stopdescription
+
+\startdescription{2018--2022}
   {\em Teacing Assistant at University of Tromsø} (Tromsø, Norway).
 
   \startitemize[packed]
@@ -131,10 +147,10 @@ free open-source software and skiing.
   \item
     FYS-0100 Basic Physics (F18,F19)
   \item
-    FYS-2009 Sun, planets and space (F20,F21)
+    FYS-2019 Sun, planets and space (F20,F21)
   \item
     FYS-3002 Techniques for investigating the near-earth space
-    environment (S21)
+    environment (S21,S22)
   \stopitemize
 \stopdescription
 
@@ -144,15 +160,15 @@ free open-source software and skiing.
 
   During eight weeks in the summer of 2019 I worked at the FFI,
   continuing the project on software defined radios from 2018. The goal
-  this summer was to be able to do real time spoofing of a GNSS (Global
-  Navigation Satellite System) receiver, meaning it should be possible
-  for the spoofer to make adjustments to the path the fake signal gives,
-  in real time. Multiple open-source projects was used, some of which I
-  modified or wrote myself during the project. The added code was
-  written in Python, and the complete project can by found in my
-  \useURL[url3][https://github.com/engeir/bladeGPS-Game][][bladeGPS-Game
-  repository]\from[url3]. The project ended in a successful
-  demonstration of real-time control of a spoofing signal.
+  was to do real time spoofing of a GNSS (Global Navigation Satellite
+  System) receiver, meaning it should be possible for the spoofer to
+  make adjustments to the path the fake signal gives, in real time.
+  Multiple open-source projects was used, some of which I modified or
+  wrote myself during the project. The added code was written in Python,
+  and the complete project can by found in my \goto{bladeGPS-Game
+  repository}[url(https://github.com/engeir/bladeGPS-Game)]. The project
+  ended in a successful demonstration of real-time control of a spoofing
+  signal.
 \stopdescription
 
 \startdescription{2018 (3 months)}
@@ -163,72 +179,70 @@ free open-source software and skiing.
   project about software defined radios for use with jamming and
   spoofing of GNSS receivers. Open-source projects was used along with a
   number of different hardware, most notably the
-  \useURL[url4][https://www.ettus.com/all-products/ub210-kit/][][USRP]\from[url4].
-  At the end of the period, spoofing of both GNSS receivers and a mobile
+  \goto{USRP}[url(https://www.ettus.com/all-products/ub210-kit/)]. At
+  the end of the period, spoofing of both GNSS receivers and a mobile
   phone was demonstrated, and a report documenting the process was
   written.
 \stopdescription
 
-\subsection[title={Technical
+\stopsectionlevel
+
+\startsectionlevel[title={Technical
 Experience},reference={technical-experience}]
 
 \startdescription{Website}
-  I have a website called
-  \useURL[url5][https://flottflyt.com][][flottflyt.com]\from[url5] where
-  I put up projects I work on in my spare time, as well as any other
-  content I find interesting. There, you can find my own NFT storefront
-  that uses the
-  \useURL[url6][https://www.metaplex.com/][][metaplex]\from[url6]
-  protocol on the
-  \useURL[url7][https://solana.com/][][Solana]\from[url7] blockchain.
+  I have a website called \goto{eirik.re}[url(https://eirik.re)] where I
+  put up projects I work on in my spare time, as well as other content I
+  find interesting.
 \stopdescription
 
 \startdescription{Open Source}
-  Maintainer of the projects
-  {\bf \useURL[url8][https://github.com/engeir/northern-lights-forecast][][northern-lights-forecast]\from[url8]}
-  and
-  {\bf \useURL[url9][https://ncdump-rich.readthedocs.io/][][ncdump-rich]\from[url9]}
-  which are both published on
-  \useURL[url10][https://pypi.org/][][PyPI]\from[url10].
+  Maintainer of the projects {\bf
+  \goto{northern-lights-forecast}[url(https://github.com/engeir/northern-lights-forecast)]}
+  (archived) and {\bf
+  \goto{ncdump-rich}[url(https://ncdump-rich.readthedocs.io/)]} which
+  are both published on \goto{PyPI}[url(https://pypi.org/)].
   northern-lights-forecast is a program that listens to a website for
   updates on northern lights weather, and sends a message to a Telegram
   bot if conditions for seeing northern lights are good. ncdump-rich is
   a previewer for quickly showing formatted metadata in \type{.nc}
-  files, written in python. Also made contributions to
-  {\bf \useURL[url11][https://github.com/Naheel-Azawy/stpv][][stpv]\from[url11]}
-  which is a general previewing tool to be used within the terminal, for
-  example with the file manager
-  \useURL[url12][https://godoc.org/github.com/gokcehan/lf][][lf]\from[url12].
+  files, written in python. Also made contributions to {\bf
+  \goto{stpv}[url(https://github.com/Naheel-Azawy/stpv)]} which is a
+  general previewing tool to be used within the terminal, for example
+  with the file manager
+  \goto{lf}[url(https://godoc.org/github.com/gokcehan/lf)].
 \stopdescription
 
 \startdescription{Programming Languages}
   {\bf python:} Have been programming in python for four years with
   increasing intensity, creating multiple projects over the years. See
-  my \useURL[url13][https://github.com/engeir][][github]\from[url13] for
-  a closer look at the different repositories.
+  my \goto{github}[url(https://github.com/engeir)] for a closer look at
+  the different repositories. {\bf go:} currently learning to golang by
+  following the
+  \goto{interpreterbook}[url(https://interpreterbook.com/)] and the
+  \goto{compilerbook}[url(https://compilerbook.com/)].
 \stopdescription
 
 \thinrule
 
 \startblockquote
-\useURL[url14][mailto:eirik.r.enger@uit.no][][eirik.r.enger@uit.no]\from[url14]
-• +47 477 19 556 • 25 years old\crlf
-\useURL[url15][https://eirikenger.xyz][][eirikenger.xyz]\from[url15] •
-\useURL[url16][https://github.com/engeir][][github]\from[url16] •
-\useURL[url17][https://www.linkedin.com/in/eirik-rolland-enger/][][linkedin]\from[url17]
-•
-\useURL[url18][https://twitter.com/EngerEirik][][twitter]\from[url18]\crlf
-Grenseveien 6, 9011 Tromsø, Norway\crlf
-Last update: 14 February 2022\crlf
-\crlf
-\useURL[url19][https://resume.eirikenger.xyz/index.pdf][][pdf
-version]\from[url19] •
-\useURL[url20][https://resume.eirikenger.xyz/index.docx][][doc
-version]\from[url20] •
-\useURL[url21][https://resume.eirikenger.xyz/index.rtf][][rtf
-version]\from[url21] •
-\useURL[url22][https://resume.eirikenger.xyz][][html
-version]\from[url22]
+\goto{engeir@pm.me}[url(mailto:engeir@pm.me)] • +47 477 19 556 • 28
+years old\crlf
+\goto{eirik.re}[url(https://eirik.re)] •
+\goto{github}[url(https://github.com/engeir)] •
+\goto{linkedin}[url(https://www.linkedin.com/in/eirik-rolland-enger/)] •
+\goto{twitter}[url(https://twitter.com/EngerEirik)]\crlf
+Elveslettvegen 125, 9020 Tromsdalen, Norway\crlf
+Last update: 12 July 2024\crlf
+
+\goto{pdf version}[url(https://resume.eirikenger.xyz/index.pdf)] •
+\goto{doc version}[url(https://resume.eirikenger.xyz/index.docx)] •
+\goto{rtf version}[url(https://resume.eirikenger.xyz/index.rtf)] •
+\goto{html version}[url(https://resume.eirikenger.xyz)]
 \stopblockquote
+
+\stopsectionlevel
+
+\stopsectionlevel
 
 \stoptext

@@ -7,9 +7,6 @@
   <title>Eirik Rolland Enger</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,10 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -55,6 +58,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,9 +88,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -134,20 +142,31 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
   <style type="text/css">
   /*
    * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
@@ -219,7 +238,7 @@
 
   /* Blockquotes */
   blockquote {
-      text-align: center
+      text-align: center;
   }
 
   /* Links */
@@ -249,20 +268,42 @@
 <hr />
 <blockquote>
 <p><strong>PhD candidate</strong></p>
-<p>PhD candidate at the complex systems modelling group at the Department of Physics and Technology, University of Tromsø. Fond of abstract ideas, free open-source software and skiing.</p>
+<p>PhD candidate at the complex systems modelling group at the
+Department of Physics and Technology, University of Tromsø. Fond of
+abstract ideas, free open-source software and skiing.</p>
 </blockquote>
 <hr />
 <h2 id="education">Education</h2>
 <dl>
 <dt>2020–2024 (expected)</dt>
-<dd><p><em>PhD, Climate Physics at the University of Tromsø</em> (Tromsø, Norway)</p>
+<dd>
+<p><em>PhD, Climate Physics at the University of Tromsø</em> (Tromsø,
+Norway)</p>
 <p>Thesis title: Global temperature response to volcanic activity.</p>
-<p>The PhD work consist of running long climate model simulations with volcanic forcing and investigate the corresponding temperature response to volcanoes. The response to volcanic forcing is hypothesized to be linear. Further, analysis will be carried out to investigate the universality of the response to volcanic forcing with respect to any kind of forcing, possibly providing valuble insight into the equilibrium climate sensitivity.</p>
+<p>The PhD work consist of simulating volcanic climate forcing and
+investigate the corresponding temperature response to volcanoes. The
+response to volcanic forcing is hypothesized to be linear. Further,
+analysis is carried out to investigate the universality of the response
+to volcanic forcing with respect to different climate forcings, possibly
+providing valuable insight into the equilibrium climate sensitivity.</p>
 </dd>
 <dt>2015–2020</dt>
-<dd><p><em>MS in Space Physics at the University of Tromsø</em> (Tromsø, Norway)</p>
-<p>Thesis title: A model for IS spectra for magnetized plasma with arbitrary isotropic velocity distributions. Link: <a href="https://hdl.handle.net/10037/19542" target="_blank">https://hdl.handle.net/10037/19542</a></p>
-<p>During the Master Thesis work I developed a <a href="https://engeir.github.io/isr-spectrum/" target="_blank">python program</a> that solves an incoherent scatter radar equation. The equation is solved for any oblique angles between the radar pointing direction and the magnetic field line, and it accepts any isotropic electron velocity distribution. This made it possible to calculate the spectrum of suprathermal electrons observed by a moving radar numerically and compare to real observations, which was a new contribution to the field.</p>
+<dd>
+<p><em>MS in Space Physics at the University of Tromsø</em> (Tromsø,
+Norway)</p>
+<p>Thesis title: A model for IS spectra for magnetized plasma with
+arbitrary isotropic velocity distributions. Link: <a
+href="https://hdl.handle.net/10037/19542" class="uri"
+target="_blank">https://hdl.handle.net/10037/19542</a></p>
+<p>During the Master Thesis work I developed a <a
+href="https://inscar.readthedocs.io/en/latest/" target="_blank">python
+program</a> that solves an incoherent scatter radar equation. The
+equation is solved for any oblique angles between the radar pointing
+direction and the magnetic field line, and it accepts any isotropic
+electron velocity distribution. This made it possible to calculate
+numerically the spectrum of super-thermal electrons observed by a moving
+radar and compare this to real observations, which was a new
+contribution to the field.</p>
 </dd>
 </dl>
 <h2 id="experience">Experience</h2>
@@ -271,13 +312,26 @@
 <!-- *Teaching Assistant*                                    Tromsø -->
 <!-- ----------                                              ---------- -->
 <dl>
-<dt>2018–Now</dt>
-<dd><p><em>Teacing Assistant at University of Tromsø</em> (Tromsø, Norway).</p>
+<dt>2024</dt>
+<dd>
+<p><em>Course leader at University of Tromsø</em> (Tromsø, Norway).</p>
+<ul>
+<li>FYS-2019 Sun, planets and space (F24)</li>
+</ul>
+<p>Led both the lectures and the exercise classes of FYS-2019 during the
+fall of 2024, giving me valuable practice in preparing course material,
+lecturing and preparation of a 4h written exam.</p>
+</dd>
+<dt>2018–2022</dt>
+<dd>
+<p><em>Teacing Assistant at University of Tromsø</em> (Tromsø,
+Norway).</p>
 <ul>
 <li>FYS-2000 Quantum Mechanics (S18)</li>
 <li>FYS-0100 Basic Physics (F18,F19)</li>
-<li>FYS-2009 Sun, planets and space (F20,F21)</li>
-<li>FYS-3002 Techniques for investigating the near-earth space environment (S21)</li>
+<li>FYS-2019 Sun, planets and space (F20,F21)</li>
+<li>FYS-3002 Techniques for investigating the near-earth space
+environment (S21,S22)</li>
 </ul>
 </dd>
 </dl>
@@ -287,8 +341,20 @@
 <!-- ----------                                              ---------- -->
 <dl>
 <dt>2019 (2 months)</dt>
-<dd><p><em>Summer student at FFI — Norwegian Defence Research Establishment</em> (Kjeller, Norway).</p>
-<p>During eight weeks in the summer of 2019 I worked at the FFI, continuing the project on software defined radios from 2018. The goal this summer was to be able to do real time spoofing of a GNSS (Global Navigation Satellite System) receiver, meaning it should be possible for the spoofer to make adjustments to the path the fake signal gives, in real time. Multiple open-source projects was used, some of which I modified or wrote myself during the project. The added code was written in Python, and the complete project can by found in my <a href="https://github.com/engeir/bladeGPS-Game" target="_blank">bladeGPS-Game repository</a>. The project ended in a successful demonstration of real-time control of a spoofing signal.</p>
+<dd>
+<p><em>Summer student at FFI — Norwegian Defence Research
+Establishment</em> (Kjeller, Norway).</p>
+<p>During eight weeks in the summer of 2019 I worked at the FFI,
+continuing the project on software defined radios from 2018. The goal
+was to do real time spoofing of a GNSS (Global Navigation Satellite
+System) receiver, meaning it should be possible for the spoofer to make
+adjustments to the path the fake signal gives, in real time. Multiple
+open-source projects was used, some of which I modified or wrote myself
+during the project. The added code was written in Python, and the
+complete project can by found in my <a
+href="https://github.com/engeir/bladeGPS-Game"
+target="_blank">bladeGPS-Game repository</a>. The project ended in a
+successful demonstration of real-time control of a spoofing signal.</p>
 </dd>
 </dl>
 <!-- ----------                                              ---------- -->
@@ -297,20 +363,55 @@
 <!-- ----------                                              ---------- -->
 <dl>
 <dt>2018 (3 months)</dt>
-<dd><p><em>Summer student at FFI — Norwegian Defence Research Establishment</em> (Kjeller, Norway).</p>
-<p>During nine weeks in the summer of 2018 I worked at the FFI on a project about software defined radios for use with jamming and spoofing of GNSS receivers. Open-source projects was used along with a number of different hardware, most notably the <a href="https://www.ettus.com/all-products/ub210-kit/" target="_blank">USRP</a>. At the end of the period, spoofing of both GNSS receivers and a mobile phone was demonstrated, and a report documenting the process was written.</p>
+<dd>
+<p><em>Summer student at FFI — Norwegian Defence Research
+Establishment</em> (Kjeller, Norway).</p>
+<p>During nine weeks in the summer of 2018 I worked at the FFI on a
+project about software defined radios for use with jamming and spoofing
+of GNSS receivers. Open-source projects was used along with a number of
+different hardware, most notably the <a
+href="https://www.ettus.com/all-products/ub210-kit/"
+target="_blank">USRP</a>. At the end of the period, spoofing of both
+GNSS receivers and a mobile phone was demonstrated, and a report
+documenting the process was written.</p>
 </dd>
 </dl>
 <h2 id="technical-experience">Technical Experience</h2>
 <dl>
 <dt>Website</dt>
-<dd>I have a website called <a href="https://flottflyt.com" target="_blank">flottflyt.com</a> where I put up projects I work on in my spare time, as well as any other content I find interesting. There, you can find my own NFT storefront that uses the <a href="https://www.metaplex.com/" target="_blank">metaplex</a> protocol on the <a href="https://solana.com/" target="_blank">Solana</a> blockchain.
+<dd>
+I have a website called <a href="https://eirik.re"
+target="_blank">eirik.re</a> where I put up projects I work on in my
+spare time, as well as other content I find interesting.
 </dd>
 <dt>Open Source</dt>
-<dd>Maintainer of the projects <strong><a href="https://github.com/engeir/northern-lights-forecast" target="_blank">northern-lights-forecast</a></strong> and <strong><a href="https://ncdump-rich.readthedocs.io/" target="_blank">ncdump-rich</a></strong> which are both published on <a href="https://pypi.org/" target="_blank">PyPI</a>. northern-lights-forecast is a program that listens to a website for updates on northern lights weather, and sends a message to a Telegram bot if conditions for seeing northern lights are good. ncdump-rich is a previewer for quickly showing formatted metadata in <code>.nc</code> files, written in python. Also made contributions to <strong><a href="https://github.com/Naheel-Azawy/stpv" target="_blank">stpv</a></strong> which is a general previewing tool to be used within the terminal, for example with the file manager <a href="https://godoc.org/github.com/gokcehan/lf" target="_blank">lf</a>.
+<dd>
+Maintainer of the projects <strong><a
+href="https://github.com/engeir/northern-lights-forecast"
+target="_blank">northern-lights-forecast</a></strong> (archived) and
+<strong><a href="https://ncdump-rich.readthedocs.io/"
+target="_blank">ncdump-rich</a></strong> which are both published on <a
+href="https://pypi.org/" target="_blank">PyPI</a>.
+northern-lights-forecast is a program that listens to a website for
+updates on northern lights weather, and sends a message to a Telegram
+bot if conditions for seeing northern lights are good. ncdump-rich is a
+previewer for quickly showing formatted metadata in <code>.nc</code>
+files, written in python. Also made contributions to <strong><a
+href="https://github.com/Naheel-Azawy/stpv"
+target="_blank">stpv</a></strong> which is a general previewing tool to
+be used within the terminal, for example with the file manager <a
+href="https://godoc.org/github.com/gokcehan/lf" target="_blank">lf</a>.
 </dd>
 <dt>Programming Languages</dt>
-<dd><strong>python:</strong> Have been programming in python for four years with increasing intensity, creating multiple projects over the years. See my <a href="https://github.com/engeir" target="_blank">github</a> for a closer look at the different repositories.
+<dd>
+<strong>python:</strong> Have been programming in python for four years
+with increasing intensity, creating multiple projects over the years.
+See my <a href="https://github.com/engeir" target="_blank">github</a>
+for a closer look at the different repositories. <strong>go:</strong>
+currently learning to golang by following the <a
+href="https://interpreterbook.com/" target="_blank">interpreterbook</a>
+and the <a href="https://compilerbook.com/"
+target="_blank">compilerbook</a>.
 </dd>
 </dl>
 <!-- :   **shell:** -->
@@ -320,12 +421,22 @@
 <!-- > [eirikenger.xyz] • [![](../images/github-logo2.png) engeir]\ -->
 <hr />
 <blockquote>
-<p><a href="mailto:eirik.r.enger@uit.no" class="email">eirik.r.enger@uit.no</a> • +47 477 19 556 • 25 years old<br />
-<a href="https://eirikenger.xyz" target="_blank">eirikenger.xyz</a> • <a href="https://github.com/engeir" target="_blank">github</a> • <a href="https://www.linkedin.com/in/eirik-rolland-enger/" target="_blank">linkedin</a> • <a href="https://twitter.com/EngerEirik" target="_blank">twitter</a><br />
-Grenseveien 6, 9011 Tromsø, Norway<br />
-Last update: 14 February 2022<br />
-<br />
-<a href="https://resume.eirikenger.xyz/index.pdf" target="_blank">pdf version</a> • <a href="https://resume.eirikenger.xyz/index.docx" target="_blank">doc version</a> • <a href="https://resume.eirikenger.xyz/index.rtf" target="_blank">rtf version</a> • <a href="https://resume.eirikenger.xyz" target="_blank">html version</a></p>
+<p><a href="mailto:engeir@pm.me" class="email">engeir@pm.me</a> • +47
+477 19 556 • 28 years old<br />
+<a href="https://eirik.re" target="_blank">eirik.re</a> • <a
+href="https://github.com/engeir" target="_blank">github</a> • <a
+href="https://www.linkedin.com/in/eirik-rolland-enger/"
+target="_blank">linkedin</a> • <a href="https://twitter.com/EngerEirik"
+target="_blank">twitter</a><br />
+Elveslettvegen 125, 9020 Tromsdalen, Norway<br />
+Last update: 12 July 2024<br />
+</p>
+<p><a href="https://resume.eirikenger.xyz/index.pdf" target="_blank">pdf
+version</a> • <a href="https://resume.eirikenger.xyz/index.docx"
+target="_blank">doc version</a> • <a
+href="https://resume.eirikenger.xyz/index.rtf" target="_blank">rtf
+version</a> • <a href="https://resume.eirikenger.xyz"
+target="_blank">html version</a></p>
 </blockquote>
 </body>
 </html>
