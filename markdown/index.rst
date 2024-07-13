@@ -115,8 +115,8 @@ Open Source
 Programming Languages
 :   **python:** Have been programming in python for four years with increasing intensity, creating
     multiple projects over the years. See my [github] for a closer look at the different
-    repositories. **go:** currently learning to golang by following the
-    [interpreterbook] and the [compilerbook].
+    repositories. **go:** currently learning go following the [interpreterbook] and the
+    [compilerbook].
 
 <!-- :   **shell:** -->
 <!--     Since switching to linux and more minimalistic window managers than the standard GNOME -->
