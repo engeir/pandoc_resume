@@ -129,7 +129,6 @@ Programming Languages
 [bladeGPS-Game repository]: https://github.com/engeir/bladeGPS-Game
 [bspwm]: https://github.com/baskerville/bspwm
 [eirik.r.enger@uit.no]: mailto:eirik.r.enger@uit.no
-[eirikenger.xyz]: https://eirikenger.xyz
 [eirik.re]: https://eirik.re
 [github]: https://github.com/engeir
 [lf]: https://godoc.org/github.com/gokcehan/lf
@@ -140,20 +139,21 @@ Programming Languages
 [python program]: https://inscar.readthedocs.io/en/latest/
 [stpv]: https://github.com/Naheel-Azawy/stpv
 [twitter]: https://twitter.com/EngerEirik
+[mastodon]: https://mastodon.social/@eirikre
 [interpreterbook]: https://interpreterbook.com/
 [compilerbook]: https://compilerbook.com/
 
-[pdf version]: https://resume.eirikenger.xyz/index.pdf
-[rtf version]: https://resume.eirikenger.xyz/index.rtf
-[html version]: https://resume.eirikenger.xyz
-[doc version]: https://resume.eirikenger.xyz/index.docx
+[pdf version]: https://resume.eirik.re/index.pdf
+[rtf version]: https://resume.eirik.re/index.rtf
+[html version]: https://resume.eirik.re
+[doc version]: https://resume.eirik.re/index.docx
 
-<!-- > [eirikenger.xyz] • [![](../images/github-logo2.png) engeir]\ -->
+<!-- > [eirik.re] • [![](../images/github-logo2.png) engeir]\ -->
 
 ----
 
 > <engeir@pm.me> • +47 477 19 556 • myage years old\
-> [eirik.re] • [github] • [linkedin] • [twitter]\
+> [eirik.re] • [github] • [linkedin] • [mastodon] • [twitter]\
 > Elveslettvegen 125, 9020 Tromsdalen, Norway\
 > Last update: thedate\
 >
