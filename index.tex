@@ -1,0 +1,248 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+%
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+%
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=397249]
+\definecolor[rulecolor][h=9cb770]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[subsection] [style=\tfd]
+\setuphead[chapter]    [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[section]    [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\defineitemgroup[enumerate]
+\setupenumerate[each][fit][itemalign=left,distance=.5em,style={\feature[+][default:tnum]}]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\section[title={Eirik Rolland Enger},reference={eirik-rolland-enger}]
+
+\thinrule
+
+\startblockquote
+{\bf PhD candidate}
+
+PhD candidate at the complex systems modelling group at the Department
+of Physics and Technology, University of Tromsø. Fond of abstract ideas,
+free open-source software and skiing.
+\stopblockquote
+
+\thinrule
+
+\subsection[title={Education},reference={education}]
+
+\startdescription{2020--2024 (expected)}
+  {\em PhD, Climate Physics at the University of Tromsø} (Tromsø,
+  Norway)
+
+  Thesis title: Global temperature response to volcanic activity.
+
+  The PhD work consist of simulating volcanic climate forcing and
+  investigate the corresponding temperature response to volcanoes. The
+  response to volcanic forcing is hypothesized to be linear. Further,
+  analysis is carried out to investigate the universality of the
+  response to volcanic forcing with respect to different climate
+  forcings, possibly providing valuable insight into the equilibrium
+  climate sensitivity.
+\stopdescription
+
+\startdescription{2015--2020}
+  {\em MS in Space Physics at the University of Tromsø} (Tromsø, Norway)
+
+  Thesis title: A model for IS spectra for magnetized plasma with
+  arbitrary isotropic velocity distributions. Link:
+  \useURL[url1][https://hdl.handle.net/10037/19542]\from[url1]
+
+  During the Master Thesis work I developed a
+  \useURL[url2][https://inscar.readthedocs.io/en/latest/][][python
+  program]\from[url2] that solves an incoherent scatter radar equation.
+  The equation is solved for any oblique angles between the radar
+  pointing direction and the magnetic field line, and it accepts any
+  isotropic electron velocity distribution. This made it possible to
+  calculate numerically the spectrum of super-thermal electrons observed
+  by a moving radar and compare this to real observations, which was a
+  new contribution to the field.
+\stopdescription
+
+\subsection[title={Experience},reference={experience}]
+
+\startdescription{2024}
+  {\em Course leader at University of Tromsø} (Tromsø, Norway).
+
+  \startitemize[packed]
+  \item
+    FYS-2019 Sun, planets and space (F24)
+  \stopitemize
+
+  Led both the lectures and the exercise classes of FYS-2019 during the
+  fall of 2024, giving me valuable practice in preparing course
+  material, lecturing and preparation of a 4h written exam.
+\stopdescription
+
+\startdescription{2018--2022}
+  {\em Teacing Assistant at University of Tromsø} (Tromsø, Norway).
+
+  \startitemize[packed]
+  \item
+    FYS-2000 Quantum Mechanics (S18)
+  \item
+    FYS-0100 Basic Physics (F18,F19)
+  \item
+    FYS-2019 Sun, planets and space (F20,F21)
+  \item
+    FYS-3002 Techniques for investigating the near-earth space
+    environment (S21,S22)
+  \stopitemize
+\stopdescription
+
+\startdescription{2019 (2 months)}
+  {\em Summer student at FFI --- Norwegian Defence Research
+  Establishment} (Kjeller, Norway).
+
+  During eight weeks in the summer of 2019 I worked at the FFI,
+  continuing the project on software defined radios from 2018. The goal
+  was to do real time spoofing of a GNSS (Global Navigation Satellite
+  System) receiver, meaning it should be possible for the spoofer to
+  make adjustments to the path the fake signal gives, in real time.
+  Multiple open-source projects was used, some of which I modified or
+  wrote myself during the project. The added code was written in Python,
+  and the complete project can by found in my
+  \useURL[url3][https://github.com/engeir/bladeGPS-Game][][bladeGPS-Game
+  repository]\from[url3]. The project ended in a successful
+  demonstration of real-time control of a spoofing signal.
+\stopdescription
+
+\startdescription{2018 (3 months)}
+  {\em Summer student at FFI --- Norwegian Defence Research
+  Establishment} (Kjeller, Norway).
+
+  During nine weeks in the summer of 2018 I worked at the FFI on a
+  project about software defined radios for use with jamming and
+  spoofing of GNSS receivers. Open-source projects was used along with a
+  number of different hardware, most notably the
+  \useURL[url4][https://www.ettus.com/all-products/ub210-kit/][][USRP]\from[url4].
+  At the end of the period, spoofing of both GNSS receivers and a mobile
+  phone was demonstrated, and a report documenting the process was
+  written.
+\stopdescription
+
+\subsection[title={Technical
+Experience},reference={technical-experience}]
+
+\startdescription{Website}
+  I have a website called
+  \useURL[url5][https://eirik.re][][eirik.re]\from[url5] where I put up
+  projects I work on in my spare time, as well as other content I find
+  interesting.
+\stopdescription
+
+\startdescription{Open Source}
+  Maintainer of the projects
+  {\bf \useURL[url6][https://github.com/engeir/northern-lights-forecast][][northern-lights-forecast]\from[url6]}
+  (archived) and
+  {\bf \useURL[url7][https://ncdump-rich.readthedocs.io/][][ncdump-rich]\from[url7]}
+  which are both published on
+  \useURL[url8][https://pypi.org/][][PyPI]\from[url8].
+  northern-lights-forecast is a program that listens to a website for
+  updates on northern lights weather, and sends a message to a Telegram
+  bot if conditions for seeing northern lights are good. ncdump-rich is
+  a previewer for quickly showing formatted metadata in \type{.nc}
+  files, written in python. Also made contributions to
+  {\bf \useURL[url9][https://github.com/Naheel-Azawy/stpv][][stpv]\from[url9]}
+  which is a general previewing tool to be used within the terminal, for
+  example with the file manager
+  \useURL[url10][https://godoc.org/github.com/gokcehan/lf][][lf]\from[url10].
+\stopdescription
+
+\startdescription{Programming Languages}
+  {\bf python:} Have been programming in python for four years with
+  increasing intensity, creating multiple projects over the years. See
+  my \useURL[url11][https://github.com/engeir][][github]\from[url11] for
+  a closer look at the different repositories. {\bf go:} currently
+  learning go following the
+  \useURL[url12][https://interpreterbook.com/][][interpreterbook]\from[url12]
+  and the
+  \useURL[url13][https://compilerbook.com/][][compilerbook]\from[url13].
+\stopdescription
+
+\thinrule
+
+\startblockquote
+\useURL[url14][mailto:engeir@pm.me][][engeir@pm.me]\from[url14] • +47
+477 19 556 • 28 years old\crlf
+\useURL[url15][https://eirik.re][][eirik.re]\from[url15] •
+\useURL[url16][https://github.com/engeir][][github]\from[url16] •
+\useURL[url17][https://www.linkedin.com/in/eirik-rolland-enger/][][linkedin]\from[url17]
+•
+\useURL[url18][https://mastodon.social/@eirikre][][mastodon]\from[url18]
+•
+\useURL[url19][https://twitter.com/EngerEirik][][twitter]\from[url19]\crlf
+Elveslettvegen 125, 9020 Tromsdalen, Norway\crlf
+Last update: 27 October 2024\crlf
+
+\useURL[url20][https://resume.eirik.re/index.pdf][][pdf
+version]\from[url20] •
+\useURL[url21][https://resume.eirik.re/index.docx][][doc
+version]\from[url21] •
+\useURL[url22][https://resume.eirik.re/index.rtf][][rtf
+version]\from[url22] • \useURL[url23][https://resume.eirik.re][][html
+version]\from[url23]
+\stopblockquote
+
+\stoptext

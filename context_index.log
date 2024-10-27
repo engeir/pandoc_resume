@@ -1,0 +1,151 @@
+resolvers       | caches | path '/home/runner/.texlive2021/texmf-var' created
+mtx-context     | warning: no format found, forcing remake (commandline driven)
+resolvers       | resolving | configuration files already identified
+resolvers       | resolving | loading configuration file '/usr/share/texmf/web2c/texmfcnf.lua'
+resolvers       | resolving |
+resolvers       | resolving | loading configuration file '/usr/share/texlive/texmf-dist/web2c/texmfcnf.lua'
+resolvers       | resolving |
+resolvers       | resolving | locating list of 'home:.texlive2021/texmf-config' (runtime) (tree:///home:.texlive2021/texmf-config)
+resolvers       | methods | resolving, method 'locators', how 'uri', handler 'tree', argument 'tree:///home:.texlive2021/texmf-config'
+resolvers       | trees | locator 'home:.texlive2021/texmf-config' not found
+resolvers       | resolving | locating list of 'home:texmf' (runtime) (tree:///home:texmf)
+resolvers       | methods | resolving, method 'locators', how 'uri', handler 'tree', argument 'tree:///home:texmf'
+resolvers       | trees | locator 'home:texmf' not found
+resolvers       | resolving | locating list of '/etc/texmf' (cached)
+resolvers       | methods | resolving, method 'locators', how 'uri', handler 'file', argument '/etc/texmf'
+resolvers       | files | file locator '/etc/texmf' found as '/etc/texmf'
+resolvers       | resolving | locating list of '/var/lib/texmf' (cached)
+resolvers       | methods | resolving, method 'locators', how 'uri', handler 'file', argument '/var/lib/texmf'
+resolvers       | files | file locator '/var/lib/texmf' found as '/var/lib/texmf'
+resolvers       | resolving | locating list of '/usr/local/share/texmf' (cached)
+resolvers       | methods | resolving, method 'locators', how 'uri', handler 'file', argument '/usr/local/share/texmf'
+resolvers       | files | file locator '/usr/local/share/texmf' found as '/usr/local/share/texmf'
+resolvers       | resolving | locating list of '/usr/share/texmf' (cached)
+resolvers       | methods | resolving, method 'locators', how 'uri', handler 'file', argument '/usr/share/texmf'
+resolvers       | files | file locator '/usr/share/texmf' found as '/usr/share/texmf'
+resolvers       | resolving | locating list of '/usr/share/texlive/texmf-dist' (cached)
+resolvers       | methods | resolving, method 'locators', how 'uri', handler 'file', argument '/usr/share/texlive/texmf-dist'
+resolvers       | files | file locator '/usr/share/texlive/texmf-dist' found as '/usr/share/texlive/texmf-dist'
+resolvers       | resolving |
+resolvers       | methods | resolving, method 'generators', how 'uri', handler 'file', argument '/etc/texmf'
+resolvers       | expansions | scanning path '/etc/texmf', branch '/etc/texmf'
+resolvers       | expansions | 5 files found on 11 directories with 0 uppercase remappings
+resolvers       | methods | resolving, method 'generators', how 'uri', handler 'file', argument '/var/lib/texmf'
+resolvers       | expansions | scanning path '/var/lib/texmf', branch '/var/lib/texmf'
+resolvers       | expansions | 72 files found on 31 directories with 8 uppercase remappings
+resolvers       | methods | resolving, method 'generators', how 'uri', handler 'file', argument '/usr/local/share/texmf'
+resolvers       | expansions | scanning path '/usr/local/share/texmf', branch '/usr/local/share/texmf'
+resolvers       | expansions | 0 files found on 0 directories with 0 uppercase remappings
+resolvers       | methods | resolving, method 'generators', how 'uri', handler 'file', argument '/usr/share/texmf'
+resolvers       | expansions | scanning path '/usr/share/texmf', branch '/usr/share/texmf'
+resolvers       | globbing | confusing filename, name: 'GUST-FONT-LICENSE.txt', lower: 'gust-font-license.txt', already: 'GUST-FONT-LICENSE.TXT'
+resolvers       | globbing | confusing filename, name: 'GUST-FONT-LICENSE.txt', lower: 'gust-font-license.txt', already: 'GUST-FONT-LICENSE.TXT'
+resolvers       | globbing | confusing filename, name: 'GUST-FONT-LICENSE.txt', lower: 'gust-font-license.txt', already: 'GUST-FONT-LICENSE.TXT'
+resolvers       | expansions | 7225 files found on 341 directories with 113 uppercase remappings
+resolvers       | methods | resolving, method 'generators', how 'uri', handler 'file', argument '/usr/share/texlive/texmf-dist'
+resolvers       | expansions | scanning path '/usr/share/texlive/texmf-dist', branch '/usr/share/texlive/texmf-dist'
+resolvers       | globbing | confusing filename, name: 'LICENSE.txt.gz', lower: 'license.txt.gz', already: 'License.txt.gz'
+resolvers       | globbing | confusing filename, name: 'LICENSE.txt.gz', lower: 'license.txt.gz', already: 'License.txt.gz'
+resolvers       | globbing | confusing filename, name: 'History', lower: 'history', already: 'HISTORY'
+resolvers       | globbing | confusing filename, name: 'License.gz', lower: 'license.gz', already: 'LICENSE.gz'
+resolvers       | globbing | confusing filename, name: 'README.TeXLive', lower: 'readme.texlive', already: 'README.TEXLIVE'
+resolvers       | globbing | confusing filename, name: 'ChangeLog', lower: 'changelog', already: 'CHANGELOG'
+resolvers       | globbing | confusing filename, name: 'ChangeLog', lower: 'changelog', already: 'CHANGELOG'
+resolvers       | globbing | confusing filename, name: 'LICENSE.txt.gz', lower: 'license.txt.gz', already: 'License.txt.gz'
+resolvers       | globbing | confusing filename, name: 'ChangeLog', lower: 'changelog', already: 'CHANGELOG'
+resolvers       | globbing | confusing filename, name: 'NEWS', lower: 'news', already: 'News'
+resolvers       | expansions | 17691 files found on 1812 directories with 3649 uppercase remappings
+resolvers       | resolving |
+resolvers       | resolving | saving tree '/etc/texmf'
+resolvers       | caches | hashing tree '/etc/texmf', hash '76f9d14d3870a3ca17c588db81902d3d'
+resolvers       | caching | preparing 'files' for '/etc/texmf'
+resolvers       | caching | category 'files', cachename '/etc/texmf' saved in '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/76f9d14d3870a3ca17c588db81902d3d.lua'
+system          | lua | compiling '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/76f9d14d3870a3ca17c588db81902d3d.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/76f9d14d3870a3ca17c588db81902d3d.luc'
+system          | lua | dumping '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/76f9d14d3870a3ca17c588db81902d3d.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/76f9d14d3870a3ca17c588db81902d3d.luc' stripped
+resolvers       | caching | 'files' compiled to '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/76f9d14d3870a3ca17c588db81902d3d.luc'
+resolvers       | resolving | saving tree '/var/lib/texmf'
+resolvers       | caches | hashing tree '/var/lib/texmf', hash '49ce9fb6981e7315a79363280fdfe510'
+resolvers       | caching | preparing 'files' for '/var/lib/texmf'
+resolvers       | caching | category 'files', cachename '/var/lib/texmf' saved in '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/49ce9fb6981e7315a79363280fdfe510.lua'
+system          | lua | compiling '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/49ce9fb6981e7315a79363280fdfe510.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/49ce9fb6981e7315a79363280fdfe510.luc'
+system          | lua | dumping '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/49ce9fb6981e7315a79363280fdfe510.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/49ce9fb6981e7315a79363280fdfe510.luc' stripped
+resolvers       | caching | 'files' compiled to '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/49ce9fb6981e7315a79363280fdfe510.luc'
+resolvers       | resolving | saving tree '/usr/local/share/texmf'
+resolvers       | caches | hashing tree '/usr/local/share/texmf', hash '5044cbe2799fe389b078f26ff6b9ee8e'
+resolvers       | caching | preparing 'files' for '/usr/local/share/texmf'
+resolvers       | caching | category 'files', cachename '/usr/local/share/texmf' saved in '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/5044cbe2799fe389b078f26ff6b9ee8e.lua'
+system          | lua | compiling '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/5044cbe2799fe389b078f26ff6b9ee8e.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/5044cbe2799fe389b078f26ff6b9ee8e.luc'
+system          | lua | dumping '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/5044cbe2799fe389b078f26ff6b9ee8e.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/5044cbe2799fe389b078f26ff6b9ee8e.luc' stripped
+resolvers       | caching | 'files' compiled to '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/5044cbe2799fe389b078f26ff6b9ee8e.luc'
+resolvers       | resolving | saving tree '/usr/share/texmf'
+resolvers       | caches | hashing tree '/usr/share/texmf', hash '0638a6bb4aac17125bf8bd1aa29dc0c8'
+resolvers       | caching | preparing 'files' for '/usr/share/texmf'
+resolvers       | caching | category 'files', cachename '/usr/share/texmf' saved in '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/0638a6bb4aac17125bf8bd1aa29dc0c8.lua'
+system          | lua | compiling '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/0638a6bb4aac17125bf8bd1aa29dc0c8.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/0638a6bb4aac17125bf8bd1aa29dc0c8.luc'
+system          | lua | dumping '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/0638a6bb4aac17125bf8bd1aa29dc0c8.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/0638a6bb4aac17125bf8bd1aa29dc0c8.luc' stripped
+resolvers       | caching | 'files' compiled to '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/0638a6bb4aac17125bf8bd1aa29dc0c8.luc'
+resolvers       | resolving | saving tree '/usr/share/texlive/texmf-dist'
+resolvers       | caches | hashing tree '/usr/share/texlive/texmf-dist', hash '6cb6a4fdaeb2b039f2fc064f35490cf6'
+resolvers       | caching | preparing 'files' for '/usr/share/texlive/texmf-dist'
+resolvers       | caching | category 'files', cachename '/usr/share/texlive/texmf-dist' saved in '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/6cb6a4fdaeb2b039f2fc064f35490cf6.lua'
+system          | lua | compiling '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/6cb6a4fdaeb2b039f2fc064f35490cf6.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/6cb6a4fdaeb2b039f2fc064f35490cf6.luc'
+system          | lua | dumping '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/6cb6a4fdaeb2b039f2fc064f35490cf6.lua' into '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/6cb6a4fdaeb2b039f2fc064f35490cf6.luc' stripped
+resolvers       | caching | 'files' compiled to '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/trees/6cb6a4fdaeb2b039f2fc064f35490cf6.luc'
+resolvers       | resolving | using given filetype 'tex'
+resolvers       | methods | resolving, method 'concatinators', how 'tag', tag 'file'
+resolvers       | resolving | remembering file 'cont-en.mkiv' using hash 'tex::cont-en.mkiv'
+resolvers       | formats | using tex source file '/usr/share/texmf/tex/context/base/mkiv/cont-en.mkiv'
+resolvers       | formats | using lua stub file '/usr/share/texmf/tex/context/base/mkiv/luat-cod.lua'
+resolvers       | formats | changing to format path '/home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/formats/luatex'
+resolvers       | formats | executing runner 'make luatex format': /usr/bin/luatex --ini  --lua=/usr/share/texmf/tex/context/base/mkiv/luat-cod.lua /usr/share/texmf/tex/context/base/mkiv/cont-en.mkiv  
+This is LuaTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (INITEX)
+ system commands enabled.
+(/usr/share/texmf/tex/context/base/mkiv/cont-en.mkiv (/usr/share/texmf/tex/context/base/mkiv/context.mkiv (/usr/share/texmf/tex/context/base/mkiv/syst-ini.mkiv) (/usr/share/texmf/tex/context/base/mkiv/norm-ctx.mkiv) (/usr/share/texmf/tex/context/base/mkiv/syst-pln.mkiv) (/usr/share/texmf/tex/context/base/mkiv/syst-mes.mkiv) (/usr/share/texmf/tex/context/base/mkiv/luat-cod.mkiv<+ /usr/share/texmf/tex/context/base/mkiv/luat-cod.lua>) (/usr/share/texmf/tex/context/base/mkiv/luat-bas.mkiv loading: ConTeXt Lua Macros / Basic Lua Libraries<+ /usr/share/texmf/tex/context/base/mkiv/l-bit32.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-lua.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-macro.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-sandbox.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-package.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-lpeg.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-function.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-string.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-table.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-boolean.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-number.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-math.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-io.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-os.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-file.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-gzip.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-md5.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-sha.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-dir.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-unicode.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-url.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-set.lua><+ /usr/share/texmf/tex/context/base/mkiv/l-macro-imp-optimize.lua>) (/usr/share/texmf/tex/context/base/mkiv/luat-lib.mkiv loading: ConTeXt Lua Macros / Libraries<+ /usr/share/texmf/tex/context/base/mkiv/util-str.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-tab.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-fil.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-sac.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-sto.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-pck.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-prs.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-fmt.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-dim.lua><+ /usr/share/texmf/tex/context/base/mkiv/trac-set.lua><+ /usr/share/texmf/tex/context/base/mkiv/luat-log.lua><+ /usr/share/texmf/tex/context/base/mkiv/trac-inf.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-lua.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-deb.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-tpl.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-seq.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-sta.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-sbx.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-soc-imp-reset.lua><+ /usr/share/texmf/tex/context/base/mkiv/util-soc-imp-socket.lua>/usr/share/texmf/tex/context/base/mkiv/l-sandbox.lua:180: module 'socket.core' not found:
+	no field package.preload['socket.core']
+	no file '/usr/local/share/lua/5.3/socket/core.lua'
+	no file '/usr/local/share/lua/5.3/socket/core/init.lua'
+	no file '/usr/local/lib/lua/5.3/socket/core.lua'
+	no file '/usr/local/lib/lua/5.3/socket/core/init.lua'
+	no file './socket/core.lua'
+	no file './socket/core/init.lua'
+	no file '/usr/local/lib/lua/5.3/socket/core.so'
+	no file '/usr/local/lib/lua/5.3/loadall.so'
+	no file './socket/core.so'
+	no file '/usr/local/lib/lua/5.3/socket.so'
+	no file '/usr/local/lib/lua/5.3/loadall.so'
+	no file './socket.so'
+stack traceback:
+	[C]: in upvalue 'requiem'
+	/usr/share/texmf/tex/context/base/mkiv/l-sandbox.lua:180: in function 'require'
+	...hare/texmf/tex/context/base/mkiv/util-soc-imp-socket.lua:8: in local 'data'
+	/usr/share/texmf/tex/context/base/mkiv/luat-cod.lua:184: in field 'luafilechunk'
+	/usr/share/texmf/tex/context/base/mkiv/luat-cod.lua:75: in function 'lua.registercode'
+	[\directlua]:1: in main chunk.
+\registerctxluafile #1#2->\ctxlua {lua.registercode("#1","#2")}
+                                                               
+l.40 \registerctxluafile{util-soc-imp-socket} {}
+                                              
+? 
+! Emergency stop.
+\registerctxluafile #1#2->\ctxlua {lua.registercode("#1","#2")}
+                                                               
+l.40 \registerctxluafile{util-soc-imp-socket} {}
+                                              
+ 181 words of node memory still in use:
+   1 dir, 22 glue_spec nodes
+   avail lists: 2:2
+!  ==> Fatal error occurred, bad output DVI file produced!
+No pages of output.
+Transcript written on cont-en.log.
+resolvers       | formats |
+resolvers       | formats | binary path      : /usr/bin
+resolvers       | formats | format path      : /home/runner/.texlive2021/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/formats/luatex
+resolvers       | formats | luatex engine    : luatex
+resolvers       | formats | lua startup file : /usr/share/texmf/tex/context/base/mkiv/luat-cod.lua
+resolvers       | formats | context file     : /usr/share/texmf/tex/context/base/mkiv/cont-en.mkiv
+resolvers       | formats | run time         : 0.031 seconds
+resolvers       | formats | return value     : error
+resolvers       | formats |
+mtx-context     | error, no format found with name: cont-en, aborting
+system          | total runtime: 0.260 seconds
+
